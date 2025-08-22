@@ -1,0 +1,87 @@
+@import "tailwindcss";
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
+@layer utilities {
+  .font-noto-sans {
+    font-family: "Noto Sans", sans-serif;
+  }
+}
+
+  .clip-desktop {
+    clip-path: polygon(0 0, 60% 0, 50% 100%, 0% 100%);
+  }
+  
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    overflow: hidden;
+  }
+  
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: #fff;
+    position: absolute;
+    width: 50px;
+    height: 54px;
+    background-color: transparent; 
+    z-index: 10;
+  }
+
+  .swiper picture img {
+    border-radius: 1rem;
+  }
+
+  
+  .swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 2rem;
+    font-weight: 800;
+  }
+
+.swiper-pagination-bullet {
+  background: white;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #f97316;
+  opacity: 1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+#lightbox-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#lightbox-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  box-shadow: 0 0 15px #000;
+}
+
+#lightbox-close {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  font-weight: bold;
+  z-index: 10000;
+}
