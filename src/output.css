@@ -191,9 +191,6 @@
   .relative {
     position: relative;
   }
-  .z-20 {
-    z-index: 20;
-  }
   .container {
     width: 100%;
     @media (width >= 40rem) {
@@ -212,12 +209,6 @@
       max-width: 96rem;
     }
   }
-  .mx-2 {
-    margin-inline: calc(var(--spacing) * 2);
-  }
-  .mx-6 {
-    margin-inline: calc(var(--spacing) * 6);
-  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -230,17 +221,11 @@
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
-  .mt-6 {
-    margin-top: calc(var(--spacing) * 6);
-  }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
-  }
-  .mb-6 {
-    margin-bottom: calc(var(--spacing) * 6);
   }
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
@@ -272,17 +257,11 @@
   .h-full {
     height: 100%;
   }
-  .w-1\/4 {
-    width: calc(1/4 * 100%);
-  }
   .w-1\/5 {
     width: calc(1/5 * 100%);
   }
   .w-2\/3 {
     width: calc(2/3 * 100%);
-  }
-  .w-2\/4 {
-    width: calc(2/4 * 100%);
   }
   .w-2\/5 {
     width: calc(2/5 * 100%);
@@ -432,9 +411,6 @@
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
   }
-  .pb-10 {
-    padding-bottom: calc(var(--spacing) * 10);
-  }
   .text-center {
     text-align: center;
   }
@@ -453,21 +429,9 @@
   .text-\[1\.5rem\] {
     font-size: 1.5rem;
   }
-  .leading-\[1rem\] {
-    --tw-leading: 1rem;
-    line-height: 1rem;
-  }
   .leading-\[2rem\] {
     --tw-leading: 2rem;
     line-height: 2rem;
-  }
-  .leading-\[3rem\] {
-    --tw-leading: 3rem;
-    line-height: 3rem;
-  }
-  .leading-\[4rem\] {
-    --tw-leading: 4rem;
-    line-height: 4rem;
   }
   .font-black {
     --tw-font-weight: var(--font-weight-black);
@@ -547,11 +511,6 @@
       width: calc(2/5 * 100%);
     }
   }
-  .sm\:w-3\/4 {
-    @media (width >= 40rem) {
-      width: calc(3/4 * 100%);
-    }
-  }
   .sm\:w-3\/5 {
     @media (width >= 40rem) {
       width: calc(3/5 * 100%);
@@ -587,9 +546,29 @@
       gap: calc(var(--spacing) * 10);
     }
   }
+  .sm\:bg-auto {
+    @media (width >= 40rem) {
+      background-size: auto;
+    }
+  }
+  .sm\:bg-contain {
+    @media (width >= 40rem) {
+      background-size: contain;
+    }
+  }
+  .sm\:bg-cover {
+    @media (width >= 40rem) {
+      background-size: cover;
+    }
+  }
   .sm\:bg-center {
     @media (width >= 40rem) {
       background-position: center;
+    }
+  }
+  .sm\:bg-no-repeat {
+    @media (width >= 40rem) {
+      background-repeat: no-repeat;
     }
   }
   .sm\:text-center {
@@ -628,18 +607,6 @@
     @media (width >= 40rem) {
       --tw-leading: 3.5rem;
       line-height: 3.5rem;
-    }
-  }
-  .sm\:leading-\[3rem\] {
-    @media (width >= 40rem) {
-      --tw-leading: 3rem;
-      line-height: 3rem;
-    }
-  }
-  .sm\:leading-\[4rem\] {
-    @media (width >= 40rem) {
-      --tw-leading: 4rem;
-      line-height: 4rem;
     }
   }
   .lg\:\[clip-path\:polygon\(0_0\,60\%_0\,50\%_100\%\,0\%_100\%\)\] {
